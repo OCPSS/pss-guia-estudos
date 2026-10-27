@@ -78,7 +78,7 @@ Dominar completamente a linguagem Java (sintaxe, APIs principais e boas prática
 
 #### 🟡 INTERFACE GRÁFICA COM JAVA
 
-- Domínio do Java Swing para criação de GUIs:
+Domínio do Java Swing para criação de GUIs:
 
 - JFrame, JDialogs, JPanels
 
@@ -154,7 +154,7 @@ Dominar completamente a linguagem Java (sintaxe, APIs principais e boas prática
 
 - Decorator
 
-### 🧩 Comportamentais
+#### 🧩 Comportamentais
 
 - Strategy
 
@@ -170,10 +170,10 @@ Dominar completamente a linguagem Java (sintaxe, APIs principais e boas prática
 
 - Template Method
 
-### 📦 Outros Úteis
+#### 📦 Outros Úteis
 
 - DAO
-  
+
 - Repository
 
 - Prototype
@@ -182,7 +182,7 @@ Dominar completamente a linguagem Java (sintaxe, APIs principais e boas prática
 
 ## 🛠️ REQUISITOS ADICIONAIS
 
-- ⚙️ Maven
+### ⚙️ Maven
 
 - Instalação e configuração
 
