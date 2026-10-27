@@ -108,9 +108,11 @@ Domínio do Java Swing para criação de GUIs:
 
 - Uso do Maven
 
+- Instalação e configuração
+
 - Configuração do pom.xml
 
-- Instalação e ciclo de vida do projeto
+- Ciclo de vida do projeto: build, execução e testes
 
 ### 🔠 Princípios SOLID
 
@@ -181,12 +183,6 @@ Domínio do Java Swing para criação de GUIs:
 - Flyweight
 
 ## 🛠️ REQUISITOS ADICIONAIS
-
-### ⚙️ Maven
-
-- Instalação e configuração
-
-- Build, execução e testes
 
 ### 🌱 Git e GitHub
 
