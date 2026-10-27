@@ -1,281 +1,266 @@
-# 📚 GUIA DE ESTUDOS — Projetos de Sistemas de Software
+# 📚 Guia de Estudos — Projetos de Sistemas de Software
 
-Para os exercícios e atividades da disciplina, é aconselhável realizá-los no caderno.
+Guia de estudos para a disciplina de **Projetos de Sistemas de Software (PSS)** da **UFES**, com foco no desenvolvimento de sistemas em **Java** orientados a objetos, aplicando princípios de engenharia de software e padrões de projeto.
 
-## ✅ REQUISITOS BÁSICOS
+> 💡 **Dica:** faça os exercícios e atividades **no caderno**. Nas provas você vai escrever código à mão, então pratique assim desde o início.
 
-#### 🟡 Java — Domínio da Linguagem (JDK 17 ou 21)
+---
 
-Dominar completamente a linguagem Java (sintaxe, APIs principais e boas práticas):
+## Sumário
+
+1. [Como usar este guia](#como-usar-este-guia)
+2. [Requisitos básicos](#requisitos-básicos)
+3. [Conteúdo da disciplina](#conteúdo-da-disciplina)
+4. [Requisitos adicionais](#requisitos-adicionais)
+5. [Dicas importantes](#dicas-importantes)
+6. [Ferramentas](#ferramentas)
+7. [Referências](#referências)
+
+---
+
+## Como usar este guia
+
+O conteúdo está organizado em três níveis:
+
+| Nível | O que é | Quando estudar |
+|---|---|---|
+| **Requisitos básicos** | Base de Java, OO, Swing e UML | Antes ou logo no início da disciplina |
+| **Conteúdo da disciplina** | Acoplamento, coesão, SOLID e padrões de projeto | Ao longo do semestre |
+| **Requisitos adicionais** | Git, banco de dados, logging e variáveis de ambiente | Antes dos trabalhos práticos |
+
+### 🧭 Ordem de estudo sugerida
+
+1. Fundamentos de Java e Orientação a Objetos
+2. Collections e Exceptions
+3. UML (diagrama de classes primeiro)
+4. Maven e Git
+5. Acoplamento, coesão e princípios SOLID
+6. Padrões de projeto (criacionais → estruturais → comportamentais)
+7. Java Swing
+8. Persistência com DAO/Repository, logging e variáveis de ambiente
+
+Use as caixas de seleção (`- [ ]`) para acompanhar seu progresso em uma cópia do guia.
+
+---
+
+## Requisitos básicos
+
+### ☕ Java (JDK 17 ou 21)
+
+Domine a linguagem: sintaxe, APIs principais e boas práticas.
 
 #### Fundamentos
 
-- Variáveis
+- [ ] Variáveis
+- [ ] Tipos primitivos e não primitivos
+- [ ] Métodos (funções)
+- [ ] Arrays e `ArrayList`
+- [ ] Packages e imports
 
-- Tipos (primitivos e não primitivos)
+#### Orientação a Objetos
 
-- Funções (Métodos)
+- [ ] Classes, objetos e métodos
+- [ ] Construtores
+- [ ] Encapsulamento
+- [ ] Herança e superclasses
+- [ ] Classes abstratas
+- [ ] Interfaces
+- [ ] Polimorfismo
+- [ ] Abstração
+- [ ] Enums
+- [ ] Modificador `final`
 
-- Arrays e ArrayList
+#### Collections e estruturas de dados
 
-- Packages e imports
+- [ ] `List`, `ArrayList` e `LinkedList`
+- [ ] `Stack`
+- [ ] `Queue`
+- [ ] `Map` e `HashMap`
+- [ ] `HashSet` e `LinkedHashSet`
 
-#### 🧱 Orientação a Objetos (OO)
+#### Funcionalidades avançadas
 
-- Classes
+- [ ] Records
+- [ ] Streams
+- [ ] Exceptions (`try`, `catch`, `throw`, `throws`)
+- [ ] Reflection API
 
-- Objetos
+#### Threads e concorrência *(opcional — aprenda pelo menos o básico)*
 
-- Métodos
+- [ ] `Thread` e concorrência
+- [ ] Sincronização
 
-- Construtores
+### 🖼️ Interface gráfica com Java Swing
 
-- Encapsulamento
+- [ ] `JFrame`, `JDialog` e `JPanel`
+- [ ] Componentes e eventos
+- [ ] Layouts e listeners
 
-- Herança
+### 📐 UML
 
-- Classes abstratas
+- [ ] Diagrama de classes
+- [ ] Diagrama de sequência
+- [ ] Diagrama de estados
 
-- Interfaces
+---
 
-- Polimorfismo
+## Conteúdo da disciplina
 
-- Abstração
+### 🔗 Acoplamento e coesão
 
-- Enums
+- [ ] **Baixo acoplamento:** classes dependem pouco umas das outras
+- [ ] **Alta coesão:** cada classe tem um propósito bem definido
 
-- Superclasses
+O resultado é um código mais modular e fácil de manter.
 
-- final
+### 📦 Gerenciador de dependências (Maven)
 
-#### 🧵 Threads e Rotinas (Opcional — aprender pelo menos o básico)
-
-- Thread e concorrência
-
-- Sincronização
-
-#### 🗂️ Collections e Estruturas de Dados
-
-- List, ArrayList, LinkedList
-
-- Stack
-
-- Queue
-
-- Map e HashMap
-
-- HashSet e LinkedHashSet
-
-#### ⚙️ Funcionalidades Avançadas
-
-- Records
-
-- Streams
-
-- Exceptions (try, catch, throw, throws)
-
-- Reflection API
-
-#### 🟡 INTERFACE GRÁFICA COM JAVA
-
-Domínio do Java Swing para criação de GUIs:
-
-- JFrame, JDialogs, JPanels
-
-- Componentes e eventos
-
-- Layouts e Listeners
-
-#### 🟡 UML (Modelagem com Diagramas)
-
-- Diagrama de Classes
-
-- Diagrama de Sequência
-
-- Diagrama de Estados
-
-## 📘 REQUISITOS DA DISCIPLINA
-
-### 📎 Acoplamento e Coesão
-
-- Baixo acoplamento
-
-- Alta coesão
-
-- → Código mais modular e de fácil manutenção.
-
-### 📦 Gerenciador de Dependências
-
-- Uso do Maven
-
-- Instalação e configuração
-
-- Configuração do pom.xml
-
-- Ciclo de vida do projeto: build, execução e testes
+- [ ] Uso do Maven
+- [ ] Instalação e configuração
+- [ ] Configuração do `pom.xml`
+- [ ] Ciclo de vida do projeto: build, execução e testes
 
 ### 🔠 Princípios SOLID
 
-- SRP — Single Responsibility
+| Sigla | Princípio | Ideia central |
+|---|---|---|
+| **S** | Single Responsibility | Uma classe deve ter um único motivo para mudar |
+| **O** | Open/Closed | Aberta para extensão, fechada para modificação |
+| **L** | Liskov Substitution | Subclasses devem poder substituir suas superclasses sem quebrar o programa |
+| **I** | Interface Segregation | Prefira várias interfaces específicas a uma interface genérica |
+| **D** | Dependency Inversion | Dependa de abstrações, não de implementações concretas |
 
-- OCP — Open/Closed
+### 🔁 Outros princípios
 
-- LSP — Liskov Substitution
+| Princípio | Ideia central |
+|---|---|
+| **DRY** (Don't Repeat Yourself) | Evite duplicar lógica; cada conhecimento deve ter uma única representação |
+| **Lei de Demeter** | Um objeto deve conversar apenas com seus "vizinhos" diretos, evitando cadeias como `a.getB().getC().fazer()` |
 
-- ISP — Interface Segregation
-
-- DIP — Dependency Inversion
-
-### 🔁 Outros Princípios
-
-- DRY — Don't Repeat Yourself
-
-- Lei de Demeter
-
-### 🧠 PADRÕES DE PROJETO (GoF)
+### 🧠 Padrões de projeto (GoF)
 
 #### 🏗️ Criacionais
 
-- Singleton
-
-- Factory Method
-
-- Abstract Factory
-
-- Builder
+| Padrão | Ideia central |
+|---|---|
+| Singleton | Garante uma única instância de uma classe |
+| Factory Method | Delega às subclasses a decisão de qual objeto criar |
+| Abstract Factory | Cria famílias de objetos relacionados sem especificar classes concretas |
+| Builder | Constrói objetos complexos passo a passo |
 
 #### 🧱 Estruturais
 
-- Adapter
-
-- Proxy
-
-- Façade
-
-- Composite
-
-- Decorator
+| Padrão | Ideia central |
+|---|---|
+| Adapter | Faz interfaces incompatíveis trabalharem juntas |
+| Proxy | Fornece um substituto que controla o acesso a outro objeto |
+| Façade | Oferece uma interface simples para um subsistema complexo |
+| Composite | Trata objetos individuais e composições de forma uniforme (estrutura em árvore) |
+| Decorator | Adiciona comportamento a um objeto dinamicamente, sem herança |
 
 #### 🧩 Comportamentais
 
-- Strategy
+| Padrão | Ideia central |
+|---|---|
+| Strategy | Encapsula algoritmos intercambiáveis |
+| Chain of Responsibility | Passa uma requisição por uma cadeia de tratadores |
+| Observer | Notifica automaticamente os interessados quando um objeto muda |
+| Command | Encapsula uma ação como objeto (permite desfazer, enfileirar, registrar) |
+| Memento | Salva e restaura o estado de um objeto sem violar o encapsulamento |
+| State | Altera o comportamento do objeto conforme seu estado interno |
+| Template Method | Define o esqueleto de um algoritmo, deixando passos para as subclasses |
 
-- Chain of Responsibility
+#### 📦 Outros padrões úteis
 
-- Observer
+| Padrão | Ideia central |
+|---|---|
+| DAO | Isola o acesso ao banco de dados do resto do sistema |
+| Repository | Abstrai a persistência como uma coleção de objetos de domínio |
+| Prototype | Cria novos objetos clonando um existente |
+| Flyweight | Compartilha objetos para economizar memória |
 
-- Command
+---
 
-- Memento
-
-- State
-
-- Template Method
-
-#### 📦 Outros Úteis
-
-- DAO
-
-- Repository
-
-- Prototype
-
-- Flyweight
-
-## 🛠️ REQUISITOS ADICIONAIS
+## Requisitos adicionais
 
 ### 🌱 Git e GitHub
 
-- Versionamento básico
+- [ ] Versionamento básico
+- [ ] Branches, commits e pull requests
+- [ ] Repositórios privados
+- [ ] Adicionar o professor como colaborador
 
-- Branches, commits e pull requests
+### 🗃️ Banco de dados e persistência
 
-- Projetos privados
-
-- Adicionar o professor como colaborador
-
-### 🗃️ Banco de Dados e Persistência
-
-- SQLite
-
-- H2
-
-- MySQL (JDBC)
-
-- CRUD
-
-- Aplicação dos padrões DAO e Repository
+- [ ] SQLite
+- [ ] H2
+- [ ] MySQL (via JDBC)
+- [ ] Operações CRUD
+- [ ] Aplicação dos padrões DAO e Repository
 
 ### 📊 Logging
 
-- Escrita e leitura de logs
+- [ ] Escrita e leitura de logs
+- [ ] Formatos: JSON, XML, CSV ou banco de dados
 
-- Formatos: JSON, XML, CSV ou Banco de Dados
+### 🔐 Variáveis de ambiente
 
-### 🧪 Variáveis de Ambiente
+- [ ] Uso de arquivos `.env` com bibliotecas como [dotenv-java](https://github.com/cdimascio/dotenv-java)
 
-- Uso de .env com bibliotecas como dotenv-java
+---
 
-## 💡 DICAS IMPORTANTES
+## Dicas importantes
 
-#### 📆 Rotina de Estudos
+### 📆 Rotina de estudos
 
-- Revisar o conteúdo na mesma semana
+- Revise o conteúdo **na mesma semana** em que foi apresentado.
+- Faça os exercícios **no caderno**.
+- Foque em entender o problema e qual é a melhor solução, não só em decorar código.
 
-- Fazer exercícios no caderno
+### 📝 Provas
 
-- Focar em entender o problema e sua melhor solução
+- Getters e setters podem ser indicados com um comentário (`// getters` / `// setters`), desde que todos sejam usados.
+- Implemente corretamente os métodos que a questão pede.
+- Priorize as questões de **maior valor e menor dificuldade**.
 
-#### 🧪 Provas
+### 👥 Trabalhos
 
-- Pode usar //getters ou //setters (se todos forem usados)
+- Crie repositórios **privados** no GitHub e adicione o professor como colaborador.
+- Planeje desde o início:
+  - a estrutura do banco de dados;
+  - a arquitetura do sistema;
+  - a divisão de tarefas da equipe.
 
-- Implementar corretamente métodos específicos
+> ⚠️ **Atenção:** o projeto pode ultrapassar **100 classes**. Não deixe para a última hora.
 
-- Priorizar questões com maior valor e menor dificuldade
+---
 
-#### 🧩 Trabalhos
+## Ferramentas
 
-- Criar repositórios privados no GitHub
+Ferramentas disponíveis no laboratório:
 
-- Adicionar o professor como colaborador
+| Categoria | Ferramentas |
+|---|---|
+| JDK | Java 17 ou 21 |
+| IDE | NetBeans, VS Code, Eclipse ou IntelliJ |
+| Modelagem UML | Astah Community |
+| Versionamento | GitHub ou GitLab |
 
-##### Planejar desde o início:
+---
 
-- Estrutura do banco
+## Referências
 
-- Arquitetura do sistema
+### 📖 Livros
 
-- Divisão correta da equipe
+- **Clean Code** — Robert C. Martin
+- **Effective Java** — Joshua Bloch
+- **Design Patterns: Elements of Reusable Object-Oriented Software** — Gamma, Helm, Johnson e Vlissides (GoF)
+- **UML Essencial** — Martin Fowler
+- **Engenharia de Software** — Ian Sommerville
 
-  ⚠️ O projeto pode ultrapassar 100 classes — não deixe para a última hora.
+### 🌐 Sites e documentação
 
-## 🖥️ RECURSOS DE APOIO
-
-##### 💻 Laboratório
-
-- Java 17 ou 21 (JDK)
-
-- NetBeans, VS Code, Eclipse ou IntelliJ
-
-- Astah Community
-
-- GitHub ou GitLab
-
-## 📚 REFERÊNCIAS E LIVROS
-
-- Clean Code — Robert C. Martin
-
-- Effective Java — Joshua Bloch
-
-- Design Patterns (GoF) — Gamma et al.
-
-- UML Essencial — Martin Fowler
-
-- Engenharia de Software — Sommerville
-
-- Refactoring.Guru
-
-- Documentação oficial do Java
-
-- Tutoriais de Maven e Git
+- [Refactoring.Guru — Padrões de projeto](https://refactoring.guru/pt-br/design-patterns)
+- [Documentação oficial do Java](https://docs.oracle.com/en/java/javase/21/)
+- [Maven — Guia de introdução](https://maven.apache.org/guides/getting-started/)
+- [Pro Git (livro gratuito, em português)](https://git-scm.com/book/pt-br/v2)
